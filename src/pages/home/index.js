@@ -1,6 +1,6 @@
 import { Wrapper, Card, Input, Button, A } from './styles';
 import QRCode from 'qrcode.react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Home(){
     const [ link, setLink ] = useState("");
@@ -14,6 +14,10 @@ export default function Home(){
     function handleChange(event){
         setLink(event.target.value);
     }
+    
+    useEffect(() => {
+        document.title = "QR Code Generator";
+    }, []);
 
     function downloadQr(){
         const qrCodeURL = document.getElementById('qrCode')
