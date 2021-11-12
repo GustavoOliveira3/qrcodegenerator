@@ -1,7 +1,7 @@
 # QR-Code Generator
 
 ## Install
-On folder of projetct type npm install to require all libs of project
+On folder of project type npm install to require all libs of project
 ```bash
 $ npm install
 ```
